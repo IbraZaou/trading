@@ -1,0 +1,935 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(180deg, #111B76 0%, #030624 100%);
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+span {
+    color: #DCAE4C;
+}
+
+
+/* HEADER STARTS*/
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #111B76;
+}
+
+header img {
+    width: 5rem;
+    cursor: pointer;
+}
+
+header span {
+    text-align: center;
+}
+
+header nav {
+    width: 40rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li a:hover {
+    border-bottom: solid 1px white;
+}
+
+header nav ul li:last-child a { 
+    border-radius: 10px;
+    background: #144FDF;
+    padding: 10px 20px;
+    color: white;
+    transition: .3s;
+}
+
+header nav ul li:last-child a:hover {
+    box-shadow: 0px 0px 15px #4879EE;
+    transition: .3s;
+    border-bottom: none;
+}
+
+header .fa-bars {
+    display: none;
+}
+
+/* HEADER ENDS */
+
+
+/* MAIN STARTS */
+
+main {
+    max-width: 75%;
+    margin: auto;
+}
+
+/* BANNIERE STARTS */
+
+.banniere {
+    background-image: url(../img/banniere.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 2rem;
+}
+
+.banniere-container-text i {
+    margin-top: 2rem;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+.banniere-container-text i:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.banniere-container-text {
+    text-align: center;
+}
+
+
+.banniere p {
+    color: white;
+    font-weight: 600;
+    opacity: .7;
+    font-size: 2.5vw;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.banniere span {
+    color: #DCAE4C;
+    font-size: 1.5vw;
+}
+
+
+/* BANNIERE ENDS */
+
+
+/* ABOUT STARTS */
+
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#about h2::after,
+.engagement h2::after {
+    content: '';
+    display: block;
+    border-bottom: solid 5px white;
+    margin-top: 1rem;
+    width: 20%;
+}
+
+#about img {
+    max-width: 32vw;
+    border: #111B76 solid 5px;
+}
+
+#about p {
+    width: 80%;
+    font-size: 1vw;
+    text-align: justify;
+}
+
+
+/* ABOUT ENDS */
+
+/* ENGAGEMENT STARTS */
+
+
+.engagement {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.engagement h2::after {
+    content: '';
+    display: block;
+    border-bottom: solid 5px white;
+    margin-top: 1rem;
+    width: 25%;
+}
+
+.engagement img {
+    max-width: 32vw;
+    border: #111B76 solid 5px;
+}
+
+.engagement h2 {
+    margin-left: auto;
+    width: 80%;
+}
+
+.engagement p {
+    width: 80%;
+    margin-left: auto;
+    font-size: 1vw;
+    text-align: justify;
+}
+
+
+/* ENGAGEMENT ENDS */
+
+/* PRICE STARTS */
+
+#price h2 {
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.container-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.container-price .bronze,
+.silver,
+.gold {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    width: 30%;
+    border-radius: 30px;
+    text-align: center;
+    border: 4px solid #144FDF;
+    background-color: #030624;
+    transition: .3s;
+}
+
+
+#price .elite {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    width: 100%;
+    margin: 4rem auto;
+    border-radius: 30px;
+    text-align: center;
+    border: 4px solid yellow;
+    background-color: #030624;
+    transition: .3s;
+}
+
+.container-price span {
+    font-size: 1rem;
+    color: white;
+}
+
+.container-price .bronze i {
+    color: #CD7F32;
+    margin-bottom: 1rem;
+}
+
+.container-price .silver i {
+    color: #C0C0C0;
+    margin-bottom: 1rem;
+}
+
+.container-price .gold i {
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+#price .elite i {
+    color: yellow;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+#price .elite strong{
+    margin: 0;
+}
+
+
+.container-price strong {
+    font-size: 2.5vw;
+    margin: 2rem auto;
+    font-weight: 600;
+}
+
+#price strong {
+    font-size: 2.5vw;
+    margin: 2rem auto;
+    font-weight: 600;
+}
+
+.container-price p {
+    text-align: center;
+    width: 70%;
+}
+
+.container-price .avant {
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+
+.container-price a {
+    background-color: #144FDF;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 3% 30%;
+    font-weight: 600;
+    color: white;
+}
+
+#price a {
+    background-color: #144FDF;
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding: 1% 10%;
+    font-weight: 600;
+    color: white;
+}
+
+/* PRICE ENDS */
+
+
+/* PRICE MOBILE STARTS */
+
+.swiper {
+    width: 200px;
+    height: 500px;
+    display: none;
+    border-radius: 20px;
+}
+
+.swiper h2 {
+    text-align: center;
+}
+
+.swiper h2::after {
+    content: '';
+    display: block;
+    border-bottom: solid 5px white;
+    margin: 1rem auto;
+    width: 25%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #030624;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #4879EE;
+}
+
+.swiper-slide:nth-child(1n),
+.swiper-slide:nth-child(2n),
+.swiper-slide:nth-child(3n) {
+    border-right: 0;
+}
+
+.swiper-slide:nth-child(4n) {
+    box-shadow: 0px 0px 20px yellow;
+    border: solid yellow;
+}
+
+.swiper-slide:nth-child(1n) i {
+    color: #CD7F32;
+}
+
+.swiper-slide:nth-child(2n) i {
+    color: #C0C0C0;
+}
+
+.swiper-slide:nth-child(3n) i {
+    color: #FFD700;
+}
+
+.swiper-slide:nth-child(4n) i {
+    color: yellow;
+    margin-bottom: 2rem;
+}
+
+
+#smart-button-container {
+    margin-bottom: 1rem;
+}
+
+/* PRICE MOBILE ENDS */
+
+
+/* MAIN ENDS */
+
+
+/* FOOTER STARTS */
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: #010D34;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .slogan {
+    width: 20%;
+}
+
+footer .footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    margin-bottom: 10%;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 5rem;
+}
+
+.sous-footer {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background-color: #010D34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.sous-footer p {
+    margin: 0;
+    font-size: 0.6rem;
+}
+
+
+/* FOOTER ENDS */
+
+/* Media Queries */
+
+@media (max-width:1200px) {
+
+}
+
+
+@media (max-width:988px) {
+
+/* HEADER */
+
+    header {
+        padding: 0 10%;
+        
+    }
+
+    header nav {
+        background-color: #fff;
+        position: fixed;
+        right: -130vw;
+        height: 100vh;
+        top: 11.2%;
+        width: 100%;
+        transition: all ease .5s;
+        z-index: 3;
+        padding-top: 1.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active {
+        right: 0vw;
+    }
+
+    header nav ul {
+        flex-direction: column-reverse;
+        height: 30vh;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    /* BANNIERE */
+
+    .banniere {
+        flex-direction: column;
+    }
+
+    .banniere-container-text p {
+        font-size: 3vw;
+    }
+
+
+    /* PRICE */
+
+    .container-price {
+        flex-direction: column;
+    }
+
+    .container-price 
+    .bronze, 
+    .silver, 
+    .gold {
+        width: 80%;
+        margin-top: 5rem;
+    }
+
+    #price .elite {
+        border: 4px solid yellow;
+    }
+
+    .container-price .avant {
+        font-weight: bolder;
+        font-size: 2vw;
+    }
+
+    /* ABOUT / ENGAGEMENT */
+
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about h2 {
+        text-align: center;
+    }
+
+    #about h2::after,
+    .engagement h2::after {
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+    #about p {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2rem;
+        font-size: 2vw;
+    }
+
+    #about img {
+        max-width: 50vw;
+    }
+
+    .engagement {
+        flex-direction: column;
+    }
+
+    .engagement h2 {
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .engagement p {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2rem;
+        font-size: 2vw;
+    }
+
+    .engagement img {
+        max-width: 50vw;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        height: auto;
+        padding-top: 4%;
+    }
+
+    footer .slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+    }
+
+    
+    footer .footer-section {
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #about p,
+    .engagement p {
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .banniere {
+        height: 30vh;
+    }
+
+    #price strong {
+        font-size: 2rem;
+    }
+
+    .main-bronze strong,
+    .main-silver strong,
+    .main-gold strong,
+    .main-elite strong {
+        font-size: 2.5rem;
+    }
+
+    .container-price .avant {
+        font-weight: bolder;
+        font-size: 3vw;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    /* BANNIERE */
+
+    .banniere {
+        height: 50vh;
+    }
+
+    .banniere-container-text p {
+        font-size: 1rem;
+    }
+
+    /* PRICE */
+
+    .swiper {
+        display: block;
+        margin-top: 3rem;
+        width: 69%;
+        margin: auto;
+    }
+
+    #price {
+        display: none;
+    }
+
+    .swiper-slide .bronze,
+    .silver,
+    .gold,
+    .elite {
+        border: none;
+        width: 100%;
+        text-align: center;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .swiper-slide span {
+        font-size: 1rem;
+        color: white;
+    }
+
+    .swiper-slide strong {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+
+    .swiper-slide p {
+        text-align: center;
+        width: 85%;
+        margin: 2rem auto;
+        font-size: 1rem;
+    }
+
+    .swiper-slide:nth-child(2n) p,
+    .swiper-slide:nth-child(3n) p {
+        margin: 0.5rem auto;
+    }
+
+    .swiper-slide:nth-child(4n) p {
+        margin: 2rem auto;
+    }
+
+    .swiper-slide a {
+        background: #144FDF;
+        margin: 2rem auto;
+        border-radius: 10px;
+        padding: 3% 25%;
+        font-weight: 600;
+        color: white;
+    } 
+
+
+    .container-price p {
+        text-align: center;
+        width: 85%;
+        margin: 2rem auto;
+        font-size: 1rem;
+    }
+
+    .container-price p {
+        text-align: center;
+        width: 85%;
+        margin: 2rem auto;
+        font-size: 1rem;
+    }
+
+    .container-price .avant {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+/* PACK BRONZE */
+
+
+/* MAIN START */
+
+    .main-bronze,
+    .main-silver,
+    .main-gold,
+    .main-elite {
+        text-align: center;
+        height: 100vh;
+        margin: 2rem auto;
+    }
+
+
+/* MAIN END */
+
+
+/* PRICE START */
+
+    .main-bronze
+    .container-price .bronze {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid black;
+        width: 80%;
+        margin: auto;
+        border-radius: 30px;
+        text-align: center;
+        border: 4px solid #144FDF;
+        background-color: #030624;
+        transition: .3s;
+    }
+
+    .container-bronze-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-bronze i {
+        color: #CD7F32;
+        transition: .3s;
+    }
+
+    .main-bronze i:hover {
+        transform: rotate(145deg);
+        transition: .3s;
+    }
+
+/* PRICE END */
+
+/* PACK SILVER */
+
+
+/* PRICE START */
+
+.main-silver
+.container-price .silver {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    text-align: center;
+    border: 4px solid #144FDF;
+    background-color: #030624;
+    transition: .3s;
+}
+
+
+.main-silver i {
+    color: #C0C0C0;
+    transition: .3s;
+}
+
+.main-silver i:hover {
+    transform: rotate(145deg);
+    transition: .3s;
+}
+
+/* PRICE END */
+
+
+
+
+/* PACK GOLD */
+
+
+/* PRICE START */
+
+.main-gold
+.container-price .gold {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    text-align: center;
+    border: 4px solid #144FDF;
+    background-color: #030624;
+    transition: .3s;
+}
+
+
+.main-gold i {
+    color: #FFD700;
+    transition: .3s;
+}
+
+.main-gold i:hover {
+    transform: rotate(145deg);
+    transition: .3s;
+}
+
+/* PRICE END */
+
+
+
+/* PACK ELITE */
+
+
+/* PRICE START */
+
+.main-elite
+.container-price .elite {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    text-align: center;
+    border: 4px solid yellow;
+    background-color: #030624;
+    transition: .3s;
+}
+
+
+.main-elite i {
+    color: yellow;
+    transition: .3s;
+}
+
+.main-elite i:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.icon-elite,
+.icon-bronze,
+.icon-gold,
+.icon-silver {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+/* PRICE END */
+
+
+
+
+
+
+
